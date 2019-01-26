@@ -1,0 +1,225 @@
+diff --git a/css/adminimal.css b/css/adminimal.css
+index eb877be..fc9507d 100644
+--- a/css/adminimal.css
++++ b/css/adminimal.css
+@@ -33,6 +33,11 @@ body.adminimal {
+   font: normal 81.3%/1.538em "Open Sans", sans-serif;
+ }
+ 
++.adminimal a:hover {
++  color: #eb731f;
++  text-decoration: none;
++}
++
+ .adminimal h1,
+ .adminimal .heading-a {
+   font-weight: 300;
+@@ -44,8 +49,8 @@ body.adminimal {
+ }
+ 
+ .adminimal .content-header {
+-  background-color: #333;
+-  padding: 1rem 0 0;
++  background-color: #6f787e;
++  padding: 2rem 0 0;
+ }
+ 
+ .adminimal.toolbar-tray-open.toolbar-fixed.toolbar-horizontal {
+@@ -194,21 +199,6 @@ body.adminimal {
+   transition: all, 0.2s;
+ }
+ 
+-.adminimal .vertical-tabs__menu-item a:hover,
+-.adminimal .vertical-tabs__menu-item a:focus {
+-  background: #D2E7F4;
+-}
+-
+-.adminimal .vertical-tabs__menu-item.is-selected a:hover,
+-.adminimal .vertical-tabs__menu-item.is-selected a:focus {
+-  background: #FCFCFA;
+-}
+-
+-.adminimal .vertical-tabs__menu-item.is-selected {
+-  border: 0 none;
+-  box-shadow: none;
+-}
+-
+ .adminimal .button {
+   border-radius: 0;
+   background-image: none;
+@@ -434,26 +424,36 @@ body.adminimal {
+   padding-top: 32px !important;
+ }
+ 
+-.adminimal .toolbar a {
++.adminimal .toolbar .toolbar-tray-vertical a,
++.adminimal .toolbar .toolbar-tray-horizontal .menu-item,
++.menu-item a {
+   transition: all, 0.2s;
+ }
+ 
+ .adminimal .toolbar .toolbar-bar {
+   box-shadow: none;
+-  background-color: #2D2D2D;
++  background-color: #1D1D1D;
+ }
+ 
+ .adminimal .toolbar .toolbar-menu {
+   background: #333;
+ }
+ 
++.adminimal .toolbar .toolbar-menu .level-2 {
++  background: rgba(255,255,255,0.1);
++}
++ 
++.adminimal .toolbar .toolbar-menu .level-3 {
++  background: rgba(255,255,255,0.2);
++} 
++ 
+ .adminimal .toolbar .toolbar-tray-vertical {
+   border: none;
+   box-shadow: none;
+ }
+ 
+ .adminimal .toolbar-tray a {
+-  color: #BBBBBB;
++  color: #bbb;
+ }
+ 
+ .adminimal .toolbar .toolbar-bar .toolbar-tab > .toolbar-item {
+@@ -487,12 +487,37 @@ body.adminimal {
+ 
+ .adminimal .toolbar .toolbar-tray .menu-item--active-trail > .toolbar-box a,
+ .adminimal .toolbar .toolbar-tray a.is-active {
+-  color: #bbb;
++  color: #fff;
+   text-decoration: none;
+   font-weight: 500;
+ }
+ 
+-.adminimal .toolbar .toolbar-tray-vertical .menu-item + .menu-item {
++.adminimal .toolbar .toolbar-tray-horizontal ul li.menu-item {
++  border: none;
++}
++
++.adminimal .toolbar .toolbar-tray-horizontal ul li.menu-item a:hover {
++  text-decoration: none;
++}
++
++.adminimal .toolbar-tray-horizontal .menu-item--expanded,
++.adminimal .toolbar-tray.toolbar-tray-horizontal .menu-item--expanded a {
++  background: #333;
++}
++
++.adminimal .toolbar a.is-active,
++.adminimal .toolbar .toolbar-menu .toolbar-menu a.is-active {
++  background: #0071b8;
++  color: #fff;
++}
++
++.adminimal .toolbar a.is-active:hover,
++.adminimal .toolbar .toolbar-menu .toolbar-menu a.is-active:hover {
++  background: #0071b8;
++  color: #fff;
++}
++  		  
++.adminimal .toolbar .menu-item + .menu-item {
+   border: 0 none;
+ }
+ 
+@@ -502,7 +527,7 @@ body.adminimal {
+ }
+ 
+ .adminimal .toolbar .toolbar-tray-horizontal {
+-  border-bottom: 1px solid #333;
++  border-bottom: 0;
+   box-shadow: none;
+ }
+ 
+@@ -526,6 +551,10 @@ body.adminimal {
+   background-image: url(../images//chevron-disc-up.svg);
+ }
+ 
++.adminimal .toolbar .toolbar-menu .toolbar-menu a {
++  color: #bbb;
++}
++
+ .adminimal .toolbar .toolbar-menu .toolbar-menu .toolbar-icon.toolbar-handle:before {
+   background-image: url(../images/chevron-disc-down.svg);
+ }
+@@ -538,19 +567,30 @@ body.adminimal {
+   background-image: url(../images//chevron-disc-up.svg);
+ }
+ 
+-.adminimal .toolbar-tray-horizontal a:focus, .toolbar-box a:focus {
++.adminimal .toolbar-tray-horizontal a:focus,
++.adminimal .toolbar-box a:focus {
+   background: transparent;
+ }
+ 
+-.adminimal .toolbar .toolbar-tray-vertical .toolbar-menu a {
++.adminimal .toolbar .toolbar-tray-horizontal .toolbar-menu .toolbar-menu .toolbar-handle {
++  display: inherit;
++}
++ 
++.adminimal .toolbar-tray-horizontal ul ul li.menu-item:first-child {
++  border-top: 1px solid #555;
++}
++   
++.adminimal .toolbar .toolbar-menu a {
+   color: #BBB;
+ }
+ 
+-.adminimal .toolbar .toolbar-tray-vertical .toolbar-menu a:hover {
++.adminimal .toolbar .toolbar-menu a:hover {
++  background-color: #555;
+   color: #fff;
++  text-decoration: none;
+ }
+ 
+-.adminimal .toolbar .toolbar-tray-vertical .toolbar-menu ul ul {
++.adminimal .toolbar .toolbar-menu ul ul {
+   border: none;
+ }
+ 
+@@ -769,40 +809,3 @@ body.adminimal {
+ .adminimal.path-batch .layout-container {
+     padding-top: 1.3rem;
+ }
+-
+-/* Module: Views */
+-.adminimal .views-display-top {
+-  background-color: #fafafa;
+-  border-bottom: 1px solid #f2f2f2;
+-}
+-
+-.adminimal .views-displays {
+-  border: 1px solid #e8e8e8;
+-}
+-
+-.adminimal .views-admin .form-edit .form-actions {
+-  border-color: #e8e8e8;
+-  background-color: #fafafa;
+-}
+-
+-.adminimal .views-ui-display-tab-bucket .views-display-setting:nth-of-type(even) {
+-  background-color: inherit;
+-}
+-
+-.adminimal .views-displays .tabs.secondary a {
+-  border-radius: 0;
+-}
+-
+-.adminimal .view-preview-form__title {
+-  background-color: #fafdfe;
+-  border-bottom: 1px solid #e8e8e8;
+-  font-size: 1.2em;
+-}
+-
+-.adminimal .views-preview-wrapper {
+-  border: 1px solid #e8e8e8;
+-}
+-
+-.adminimal .views-ui-dialog .views-override {
+-  background-color: #f6f6f6;
+-}

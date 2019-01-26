@@ -1,0 +1,33 @@
+core: 8.x
+type: theme
+base theme: stack
+
+name: 'Magellan Tutoring'
+description: 'Magellan Tutoring Themes.'
+package: 'Bootstrap'
+
+regions:
+  subjects_navigation: 'Subjects Navigation'
+  navigation: 'Navigation'  
+  branding: 'Site Branding'
+  usertools: 'User Tools'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header_first: 'Top Bar First'
+  header_second: 'Top Bar Second'
+  title: 'Title'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  postscript_first: 'Postscript First'
+  postscript_second: 'Postscript Second'
+  postscript_third: 'Postscript Third'
+  postscript_fouth: 'Postscript Fouth'
+  footer: 'Footer'
+  page_top: 'Page Top'
+  page_bottom: 'Page Bottom'
+
+libraries:
+  - 'magellantutoring/global-styling'
+  - 'magellantutoring/fonts'

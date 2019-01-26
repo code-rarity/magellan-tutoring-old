@@ -1,0 +1,657 @@
+/*------------------------------------------------------------------------
+# Stack Drupal
+# ------------------------------------------------------------------------
+# Created by Symphony Themes
+# Websites:  http://www.symphonythemes.com -  Email: info@symphonythemes.com
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------*/
+
+/* 01. Local CSS
+ --------------------------------------------------------------------------------*/
+input[type], textarea, select {
+  border-radius: 0px !important; 
+  height:45px;
+  border:none;
+  text-align:center;
+}
+
+#main-container section {
+  padding-top: 4em !important; 
+  padding-bottom:4em !important;
+}
+
+#menu1 {
+  z-index:100 !important;
+}
+
+.btn {
+  background: url("/themes/magellantutoring/img/linen.png"); 
+  color:#fff;
+  border-radius: 0px;
+  height: 45px;
+  border:none;
+  font-size:1.1em;
+}
+
+.btn:hover {
+  background: #fff !important; 
+  color:#6c6c6c;
+  border-radius: 0px;
+  height: 45px;
+  border:none;
+  font-size:1.1em;
+}
+
+.btn-secondary {
+  background: url("/themes/magellantutoring/img/linen.png"); 
+  color:#fff;
+  border-radius: 0px;
+  height: 45px;
+  border:none;
+  line-height:1.6em;
+}
+
+.btn-secondary:hover {
+  background: #31639c !important; 
+  color:#fff;
+  border-radius: 0px;
+  height: 45px;
+  border:none;
+  line-height:1.6em;
+}
+
+.btn--primary, .btn--primary:visited {
+  background: #31639c !important;
+  border-color: #31639c !important;
+}
+
+.btn__text {
+ color:#fff !important; 
+}
+
+.item-list {
+ width:25%;
+ float:left;
+}
+
+.tutor-content h2 {
+  font-size: 1.25em;
+  text-align: center;
+  color: #6c6c6c;
+}
+
+.item-list h2 {
+  line-height: 2em;
+  text-align: center;
+  font-size: 1.25em;
+  margin-bottom: 0;
+}
+
+.item-list h3 {
+  line-height: normal;
+  font-size: 1.25em;
+  margin-bottom: 0;
+}
+
+.tutors .field--name-field-tutor-image {
+  width:50%;
+  float:left;
+}
+
+.tutors .field--name-field-tutor-image img {
+  width:100%;
+}
+
+.tutors .field--name-field-subject-category {
+  float: left;
+  width: 25%;
+  padding: 25px;
+}
+
+.tutors .field--name-field-tutor-location {
+  float: left;
+  width: 25%;
+  padding: 25px; 
+}
+
+.tutors .field--name-body {
+  float: right;
+  width: 50%;
+  padding: 25px; 
+}
+
+.tutors .field--label {
+ font-size: 1.2em;
+}
+
+.tutor-content .views-field-title {
+  text-align:center;
+}
+
+.tutor-content .views-field-title a {
+  font-size: 1.25em;
+  color: #6c6c6c;
+}
+
+#block-usertools {
+  padding:0;
+  font-size:15px; 
+}
+
+a.dropdown__trigger {
+  opacity: 1.0 !important; 
+}
+
+.block-superfish {
+  overflow:visible !important;
+}
+
+#menu1 ul.sf-menu a, ul.sf-menu span.nolink {
+  padding: 1.3em 1.05em !important;
+  font-weight:bold !important;
+  color: #fff;
+}
+
+#menu1.pos-fixed ul.sf-menu a, ul.sf-menu span.nolink {
+  padding: 1.3em 1.05em !important;
+  font-weight:bold !important;
+  color: #6c6c6c;
+}
+
+#menu2 ul.sf-menu a, ul.sf-menu span.nolink {
+  padding: 1.3em 1.05em !important;
+  font-weight:bold !important;
+  color: #6c6c6c;
+}
+
+.pos-fixed #menu2 ul.sf-menu a, ul.sf-menu span.nolink {
+  padding: 1.3em 1.05em !important;
+  font-weight:bold !important;
+  color: #6c6c6c;
+}
+
+.pos-fixed ul.sf-menu a, ul.sf-menu span.nolink {
+  color:#6c6c6c;
+}
+
+.sf-depth-1 {
+  text-transform: uppercase;
+}
+
+.sf-depth-2 {
+  background: url("/themes/magellantutoring/img/linen.png") !important;
+  color: #fff !important;
+}
+
+.sf-depth-2:hover {
+  background:#6c6c6c !important;
+  color:#fff !important;
+}
+
+article .full-page .clearfix {
+  overflow:visible !important; 
+}
+
+.mt-front-cta {
+  position: relative;
+  color: #FFF;
+  float: left;
+  max-width: 400px;
+}
+
+.mt-front-banner h1 {
+  color: #fe6a0d;
+  background: none;
+  display: block;
+  text-transform: uppercase;
+  line-height: .9;
+  font-weight: 800;
+  text-align: center;
+  font-size: 11rem;
+  margin-left: -1rem;
+  -webkit-mask: url("/themes/magellantutoring/img/paper.png");
+  mask: url("/themes/magellantutoring/img/paper.png");
+  mask-size: auto auto;
+  -webkit-mask-size: 600px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: text;
+  background-clip: text;
+  float:left;
+}
+
+.mt-front-banner h1 span:nth-child(2) {
+  margin-left: 0;
+}
+
+.mt-front-cta p {
+  font-size: 1.6rem;
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #FFF;
+  text-shadow: 0 0 3px #383d44;
+  text-align:center;
+  max-width:100%;
+}
+
+.mt-front-cta a {
+  background: url("/themes/magellantutoring/img/linen.png");
+  padding: 10px 40px;
+  float: right;
+  margin-right: 50px;
+  font-size: 1.2em !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height:1.6em !important;
+}
+
+.mt-front-cta a:hover {
+  background: url("/themes/magellantutoring/img/linen.png");
+  padding: 10px 40px;
+  float: right;
+  margin-right: 50px;
+  font-size: 1.2em !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height:1.6em !important;
+}
+
+.sf-multicolumn {
+  margin-top:25px !important; 
+}
+
+@media (min-width: 480px) {
+  .mt-front-banner h1 {
+    margin-left: auto;
+    font-size: 10.5rem;
+    letter-spacing: -.05em;
+    max-width:680px;
+    -webkit-mask: url("/themes/magellantutoring/img/paper.png");
+    mask: url("/themes/magellantutoring/img/paper.png");
+    mask-size: auto auto;
+    -webkit-mask-size: 600px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    background-clip: text;
+    float:left;
+  }
+  
+  .mt-front-cta {
+    position: relative;
+    color: #FFF;
+    float: left;
+    max-width: 100%;
+  }
+  
+  .mt-front-cta p {
+    font-size: 1.6rem;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 0 0 3px #383d44;
+    text-align:center;
+    max-width:100%;
+  }
+
+  .mt-front-cta a {
+    background: url("/themes/magellantutoring/img/linen.png");
+    padding: 10px 40px;
+    float: right;
+    margin-right: 50px;
+    font-size: 1em !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    display:block;
+    margin-top:15px;
+    line-height:1.6em !important;
+  }
+  
+  .mt-front-cta a:hover {
+    background: url("/themes/magellantutoring/img/linen.png");
+    padding: 10px 40px;
+    float: right;
+    margin-right: 50px;
+    font-size: 1em !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    display:block;
+    margin-top:15px;
+    line-height:1.6em !important;
+  }
+
+  .tutors .field--name-field-tutor-image {
+    width:100%;
+    float:left;
+  }
+
+  .tutors .field--name-field-subject-category {
+    float: left;
+    width: 50%;
+    padding: 0 25px 0 25px;
+  }
+
+  .tutors .field--name-field-tutor-location {
+    float: left;
+    width: 50%;
+    padding: 0 25px 0 25px; 
+  }
+
+  .tutors .field--name-body {
+    float: right;
+    width: 100%;
+    padding: 25px; 
+  }
+}
+
+@media (min-width: 768px) {
+  .mt-front-banner h1 {
+    background-size: 45%;
+    font-size: 11rem;
+    max-width:680px;
+    -webkit-mask: url("/themes/magellantutoring/img/paper.png");
+    mask: url("/themes/magellantutoring/img/paper.png");
+    mask-size: auto auto;
+    -webkit-mask-size: 600px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    background-clip: text;
+    float:left;
+  }
+  
+  .mt-front-cta {
+    position: relative;
+    color: #FFF;
+    float: left;
+    max-width: 100%;
+  }
+
+  .mt-front-cta p {
+    font-size: 1.6rem;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 0 0 3px #383d44;
+    text-align:center;
+    max-width:100%;
+  }
+
+  .mt-front-cta a {
+    background: url("/themes/magellantutoring/img/linen.png");
+    padding: 10px 40px;
+    float: right;
+    margin-right: 50px;
+    font-size: 1em !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    display:block;
+    margin-top:15px;
+    line-height:1.6em !important;
+  }
+  
+  .mt-front-cta a:hover {
+    background: url("/themes/magellantutoring/img/linen.png");
+    padding: 10px 40px;
+    float: right;
+    margin-right: 50px;
+    font-size: 1em !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    display:block;
+    margin-top:15px;
+    line-height:1.6em !important;
+  }
+  
+  .tutors .field--name-field-tutor-image {
+    width:50%;
+    float:left;
+  }
+
+  .tutors .field--name-field-subject-category {
+    float: left;
+    width: 25%;
+    padding: 0 25px 0 25px; 
+  }
+
+  .tutors .field--name-field-tutor-location {
+    float: left;
+    width: 25%;
+    padding: 0 25px 0 25px; 
+  }
+
+  .tutors .field--name-body {
+    float: right;
+    width: 50%;
+    padding: 25px; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .mt-front-banner h1 {
+    line-height: .8;
+    font-size: 11rem;
+    text-align: left;
+    letter-spacing: -0.1em;
+    max-width:680px;
+    -webkit-mask: url("/themes/magellantutoring/img/paper.png");
+    mask: url("/themes/magellantutoring/img/paper.png");
+    mask-size: auto auto;
+    -webkit-mask-size: 600px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    background-clip: text;
+    float:left;
+  }
+ 
+  .mt-front-cta {
+    position: relative;
+    color: #FFF;
+    float: left;
+    max-width: 400px;
+  }
+  
+  .mt-front-banner h1 span:nth-child(2) {
+    margin-left: 120px;
+  }
+  
+  .mt-front-cta:before {
+    content: "\007b";
+    left: -6rem;
+  }
+  
+  .mt-front-cta:after {
+    content: "\007d";
+    right: -3.8rem;
+  }
+  
+  .mt-front-cta p {
+    font-size: 1.6rem;
+    margin: 15px 0 0 0;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 0 0 3px #383d44;
+    text-align:left;
+    max-width:375px;
+  }
+
+  .mt-front-cta a {
+    background: url("/themes/magellantutoring/img/linen.png");
+    padding: 10px 40px;
+    float: right;
+    margin-right: 50px;
+    font-size: 1.2em !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height:1.6em !important;
+  }
+  
+  .mt-front-cta a:hover {
+    background: url("/themes/magellantutoring/img/linen.png");
+    padding: 10px 40px;
+    float: right;
+    margin-right: 50px;
+    font-size: 1.2em !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height:1.6em !important;
+  }
+  
+  .mt-front-cta:before, .mt-front-cta:after {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    top: -5.0rem;
+    display: block;
+    position: absolute;
+    -webkit-background-clip: text;
+    font-size: 20em;
+    color: #FFF;
+    -webkit-mask: url("/themes/magellantutoring/img/paper.png");
+    -webkit-mask-size: 550px;
+  }
+  
+  .tutors .field--name-field-tutor-image {
+    width:50%;
+    float:left;
+  }
+
+  .tutors .field--name-field-subject-category {
+    float: left;
+    width: 25%;
+    padding: 0 25px 0 25px; 
+  }
+
+  .tutors .field--name-field-tutor-location {
+    float: left;
+    width: 25%;
+    padding: 0 25px 0 25px; 
+  }
+
+  .tutors .field--name-body {
+    float: right;
+    width: 50%;
+    padding: 25px; 
+  }
+}
+
+@media (min-width: 1120px) {
+  .mt-front-banner h1 {
+    line-height: .8;
+    font-size: 11rem;
+    text-align: left;
+    letter-spacing: -0.1em;
+    max-width:680px;
+    -webkit-mask: url("/themes/magellantutoring/img/paper.png");
+    mask: url("/themes/magellantutoring/img/paper.png");
+    mask-size: auto auto;
+    -webkit-mask-size: 600px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    background-clip: text;
+    float:left;
+  }
+  
+  .mt-front-banner h1 span:nth-child(2) {
+    margin-left: 120px;
+  }
+  
+  .mt-front-cta {
+    position: relative;
+    color: #FFF;
+    float: left;
+    max-width: 400px;
+  }
+  
+  .mt-front-cta:before {
+    content: "\007b";
+    left: -6rem;
+  }
+  
+  .mt-front-cta:after {
+    content: "\007d";
+    right: -3.8rem;
+  }
+  
+  .mt-front-cta p {
+    font-size: 1.6rem;
+    margin: 15px 0 0 0;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 0 0 3px #383d44;
+    text-align:left;
+    max-width:375px;
+  }
+
+  .mt-front-cta a {
+    background: url("/themes/magellantutoring/img/linen.png");
+    padding: 10px 40px;
+    float: right;
+    margin-right: 50px;
+    font-size: 1.2em !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height:1.6em !important;
+  }
+  
+  .mt-front-cta a:hover {
+    background: url("/themes/magellantutoring/img/linen.png");
+    padding: 10px 40px;
+    float: right;
+    margin-right: 50px;
+    font-size: 1.2em !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height:1.6em !important;
+  }
+  
+  .mt-front-cta:before, .mt-front-cta:after {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    top: -5.0rem;
+    display: block;
+    position: absolute;
+    -webkit-background-clip: text;
+    font-size: 20em;
+    color: #FFF;
+    -webkit-mask: url("/themes/magellantutoring/img/paper.png");
+    -webkit-mask-size: 550px;
+  }
+  
+  .tutors .field--name-field-tutor-image {
+    width:50%;
+    float:left;
+  }
+
+  .tutors .field--name-field-subject-category {
+    float: left;
+    width: 25%;
+    padding: 0 25px 0 25px; 
+  }
+
+  .tutors .field--name-field-tutor-location {
+    float: left;
+    width: 25%;
+    padding: 0 25px 0 25px; 
+  }
+
+  .tutors .field--name-body {
+    float: right;
+    width: 50%;
+    padding: 25px; 
+  }
+}
