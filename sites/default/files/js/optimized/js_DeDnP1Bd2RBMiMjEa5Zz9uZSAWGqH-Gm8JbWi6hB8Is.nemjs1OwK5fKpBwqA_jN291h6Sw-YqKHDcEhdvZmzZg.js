@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://www.magellantutoring.com/modules/contrib/embed/js/embed.js. */
+(function(t,e){'use strict';e.runEmbedBehaviors=function(a,r,i){var o={};t.each(e.embed.excludedBehaviors,function(a,t){o[t]=e.behaviors[t];delete e.behaviors[t]});(a==='attach'?e.attachBehaviors:e.detachBehaviors)(r,i);t.extend(e.behaviors,o)};e.AjaxCommands.prototype.embed_insert=function(a,r,o){var i=t(a.element);i.html(r.data);e.runEmbedBehaviors('attach',i.get(0),r.settings||a.settings)};e.embed={excludedBehaviors:['editor','contextual']}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at http://www.magellantutoring.com/modules/contrib/embed/js/embed.js. */
