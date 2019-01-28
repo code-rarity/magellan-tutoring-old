@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://www.magellantutoring.com/core/misc/batch.js. */
+(function(r,e){e.behaviors.batch={attach:function(i,a){var t=a.batch,o=r('[data-drupal-progress]').once('batch'),n=void 0;function s(r,e,o){if(r==='100'){o.stopMonitoring();window.location=t.uri+'&op=finished'}};function p(e){o.prepend(r('<p class="error"></p>').html(t.errorMessage));r('#wait').hide()};if(o.length){n=new e.ProgressBar('updateprogress',s,'POST',p);n.setProgress(-1,t.initMessage);n.startMonitoring(t.uri+'&op=do',10);o.empty();o.append(n.element)}}}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at http://www.magellantutoring.com/core/misc/batch.js. */
