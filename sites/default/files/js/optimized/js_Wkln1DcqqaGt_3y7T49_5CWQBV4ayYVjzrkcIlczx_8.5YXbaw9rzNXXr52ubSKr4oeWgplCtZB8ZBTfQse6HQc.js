@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://www.magellantutoring.com/core/modules/comment/js/comment-by-viewer.js. */
+(function(t,e,r){e.behaviors.commentByViewer={attach:function(a){var e=parseInt(r.user.uid,10);t('[data-comment-user-id]').filter(function(){return parseInt(this.getAttribute('data-comment-user-id'),10)===e}).addClass('by-viewer')}}})(jQuery,Drupal,drupalSettings);
+/* Source and licensing information for the above line(s) can be found at http://www.magellantutoring.com/core/modules/comment/js/comment-by-viewer.js. */
